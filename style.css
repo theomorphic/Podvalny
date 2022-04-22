@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body {
+  color: #0f141e;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  margin-right: 40px;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* каждый элемент идет друг под другом */
+  min-height: 100vh;
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #0f141e;
+  font-style: italic;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #006699;
+  font-style: italic;
+}
+
+.roof {
+  background-color: #006699;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education {
+  margin-bottom: 20px;
+}
+
+.jobs-one {
+  margin-bottom: 30px;
+}
+
+.personal {
+  margin-bottom: 20px;
+}
+
+.more {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #006699;
+  height: 50px;
+  color: #fff;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 10px 70px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-button a {
+  text-decoration: none;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
