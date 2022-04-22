@@ -1,18 +1,10 @@
 @import "./colors";
 
-
 body{
 	color: $textMainColor;
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	height: 100%;
-}
-
-img {
-	width: 250px;
-	height: 250px;
-	border-radius: 25px;
-	margin-right: 40px;
 }
 
 .container{
@@ -27,23 +19,14 @@ img {
 	min-height: 100vh;
 }
 
-
-.general{
-	display: flex;
-	margin-bottom: 30px;
-		}
-		p{
-			color: $textMainColor;
-			font-style: italic;
-			margin: 0;
-		}
-
-h1, h2 {
-	color: $generalColor;
-	font-style: italic;
+img {
+	width: 250px;
+	height: 250px;
+	border-radius: 25px;
+	margin-right: 40px;
 }
 
-.roof{
+nav{
 	background-color: $generalColor;
 	width: 100%;
    	height: 50px;
@@ -53,40 +36,40 @@ h1, h2 {
     	top: 0%;
     	left: 0%;
 	display: flex;
-}
-
-.education{
-	margin-bottom: 20px;
-}
-
-.jobs-one{
-	margin-bottom: 30px;
-}
-
-.personal{
-	margin-bottom: 20px;
-}
-
-.more{
-	margin-bottom: 20px;
-}
-
-.footer{
-	background-color: $generalColor;
-   	height: 50px;
-	color: $textForRoofFooterColor;
-	margin-top: auto;
-	width: 100%;
-	text-align:center;
-	box-sizing: border-box;
-	padding: 20px 10px 70px 10px;
-	display: flex;
-}
-
-.nav-button{
-	display: flex;
 		a{
 			text-decoration: none;
 			color: $textForRoofFooterColor;
 		}
+	align-items: center;
+}
+
+header{
+	display: flex;
+	margin-bottom: 20px;
+		p{
+			color: $textMainColor;
+			font-style: italic;
+			margin: 0;
+		}
+}
+
+.block{
+	margin-bottom: 40px;
+}
+
+h1, h2 {
+	color: $generalColor;
+	font-style: italic;
+}
+
+footer{
+	background-color: $generalColor;
+	height: 50px;
+	color: $textForRoofFooterColor;
+	margin-top: auto;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 10px 70px 10px;
+	display: flex;
+	align-items: center;
 }

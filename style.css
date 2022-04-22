@@ -6,13 +6,6 @@ body {
   height: 100%;
 }
 
-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 25px;
-  margin-right: 40px;
-}
-
 .container {
   max-width: 750px;
   margin: auto;
@@ -30,25 +23,14 @@ img {
   min-height: 100vh;
 }
 
-.general {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  margin-right: 40px;
 }
 
-p {
-  color: #0f141e;
-  font-style: italic;
-  margin: 0;
-}
-
-h1, h2 {
-  color: #006699;
-  font-style: italic;
-}
-
-.roof {
+nav {
   background-color: #006699;
   width: 100%;
   height: 50px;
@@ -60,47 +42,52 @@ h1, h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.education {
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 20px;
 }
 
-.jobs-one {
-  margin-bottom: 30px;
+header p {
+  color: #0f141e;
+  font-style: italic;
+  margin: 0;
 }
 
-.personal {
-  margin-bottom: 20px;
+.block {
+  margin-bottom: 40px;
 }
 
-.more {
-  margin-bottom: 20px;
+h1, h2 {
+  color: #006699;
+  font-style: italic;
 }
 
-.footer {
+footer {
   background-color: #006699;
   height: 50px;
   color: #fff;
   margin-top: auto;
   width: 100%;
-  text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px 10px 70px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.nav-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav-button a {
-  text-decoration: none;
-  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
