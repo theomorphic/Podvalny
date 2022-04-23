@@ -1,75 +1,144 @@
 @import "./colors";
 
+html{
+	height: 100%;
+}
 body{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	color: $textMainColor;
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
-	height: 100%;
-}
-
-.container{
-	max-width: 750px;
-	margin: auto;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column; 
-	/* каждый элемент идет друг под другом */
 	min-height: 100vh;
+	text-align: center;
+	min-height: 100vh;
+	box-sizing: border-box;
+	h1, h2 {
+		color: $generalColor;
+		font-style: italic;
+	}
+	p{
+		font-size: 16px;
+	}
 }
-
-img {
-	width: 250px;
-	height: 250px;
-	border-radius: 25px;
-	margin-right: 40px;
-}
-
 nav{
-	background-color: $generalColor;
-	width: 100%;
-   	height: 50px;
-	color: $textForRoofFooterColor;
-	padding: 10px;
 	position: fixed;
-    	top: 0%;
-    	left: 0%;
-	display: flex;
-		a{
-			text-decoration: none;
-			color: $textForRoofFooterColor;
+	flex: 0 0 auto;
+	width: 100vw;
+	height: 50px;
+	padding: 10px;
+	text-align: center;
+	background-color: $generalColor;
+	color: $textForRoofFooterColor;
+	.nav-content{
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		.nav-buttons{
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 1rem 0 3rem 0;
+			li{
+				margin: 0 10px;
+			}
+			a{
+				text-decoration: none;
+				color: $textForRoofFooterColor;
+			}
+			
 		}
-	align-items: center;
+	}
 }
-
 header{
-	display: flex;
-	margin-bottom: 20px;
+	margin-top: 100px;
+	margin-bottom: 40px;
 		p{
 			color: $textMainColor;
 			font-style: italic;
 			margin: 0;
 		}
+	img {
+		width: 250px;
+		height: 250px;
+		border-radius: 25px;
+		margin-right: 40px;
+	}
 }
 
-.block{
+header,main{
+	flex: 1 0 auto;
+}
+section{
 	margin-bottom: 40px;
+	.jobs-example{
+		margin-bottom: 30px;
+	}
 }
-
-h1, h2 {
-	color: $generalColor;
-	font-style: italic;
-}
-
 footer{
 	background-color: $generalColor;
-	height: 50px;
 	color: $textForRoofFooterColor;
-	margin-top: auto;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 20px 10px 70px 10px;
-	display: flex;
-	align-items: center;
+	flex: 0 0 auto;
+	text-align: center;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: auto;
+	.footer-content{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		h3{
+			font-size: 1.8rem;
+			font-weight: 400;
+			text-transform: capitalize;
+			line-height: 3rem;
+		}
+		p{
+			max-width: 500px;
+			margin: 10px auto;
+			line-height: 28px;
+			font-size: 14px;
+		}
+		.socials{
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 1rem 0 3rem 0;
+			li{
+				margin: 0 10px;
+			}
+			a{
+				text-decoration: none;
+				color: $textForRoofFooterColor;
+			}
+			
+		}
+		
+	}
+	.footer-bottom{
+		background: $generalColor2;
+		width: 100vw;
+		padding: 20px 0;
+		text-align: center;
+		p{
+			font-size: 14px;
+			word-spacing: 2px;
+			text-transform: capitalize;
+		}
+		span{
+			text-transform: lowercase;
+			opacity: .4;
+			font-weight: 200;
+			font-size: 16px;
+		}
+	}
+
 }
