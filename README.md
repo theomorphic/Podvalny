@@ -1,3 +1,3 @@
 # Podvalny
-Yaroslav Podvalny CV
+Yaroslav Podvalny Oficial Website
 #### https://theomorphic.github.io/Podvalny
